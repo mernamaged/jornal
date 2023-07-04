@@ -1,0 +1,23 @@
+.book{
+    display: flex;
+    justify-content: center;
+}
+.cover{
+    position: absolute;
+    transition:1s ;
+    transform-origin: left;
+    z-index: 1;
+}
+.book:hover .cover{ 
+    transform:rotateY(180deg);
+}
+img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.paragraph{
+    position: relative;
+    width: 200px;
+    padding: 10px;
+}
